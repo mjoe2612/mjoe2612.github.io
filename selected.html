@@ -6,9 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Minwoong Joe's Selected Publications">
-    <meta property="og:title" content="Minwoong Joe - Selected Publications">
-    <meta property="og:description" content="Minwoong Joe's Selected Publications for Review">
-    <meta property="og:url" content="https://mjoe2612.github.io/">
     <meta name="theme-color" content="#000000">
 
     <!-- Bootstrap 3.4.0 -->
@@ -18,11 +15,28 @@
       body {
         padding-top: 40px;
         padding-bottom: 40px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      /* 상단 네비게이션 버튼 스타일 */
+      .category-nav {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .category-nav a {
+        margin: 5px;
+        border-radius: 20px;
+      }
+      /* 섹션 제목 스타일 */
+      .section-title {
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 10px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        color: #2c3e50;
+        font-weight: bold;
       }
       .paper-block {
-        margin-bottom: 30px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid #eeeeee;
+        margin-bottom: 40px;
       }
       .paper-title {
         font-size: 1.15em;
@@ -35,67 +49,80 @@
       }
       .paper-summary {
         margin-top: 10px;
-        background-color: #f9f9f9;
+        background-color: #f8f9fa;
         padding: 15px;
         border-left: 4px solid #337ab7;
         font-size: 0.95em;
       }
       .paper-img {
         width: 100%;
-        max-width: 250px;
+        max-width: 240px;
         height: auto;
         border: 1px solid #ddd;
         border-radius: 4px;
         margin-bottom: 15px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       }
     </style>
   </head>
   <body>
 
-    <!-- container를 사용해 양쪽 여백을 줍니다 -->
     <div class="container" style="max-width: 900px;">
       
-      <div class="page-header">
-        <h1>Selected Publications <small>Minwoong Joe</small></h1>
-        <p class="lead" style="margin-top: 15px; font-size: 1.1em; color: #666;">
-          핵심 연구 성과를 요약한 대표 논문 목록입니다.
+      <div class="page-header" style="border-bottom: none; text-align: center;">
+        <h1 style="font-weight: bold;">Selected Publications</h1>
+        <p class="lead" style="margin-top: 15px; color: #666;">
+          Minwoong Joe, Ph.D.
         </p>
       </div>
 
-      <!-- [논문 1 시작] -->
+      <!-- 상단 카테고리 빠른 이동 버튼 -->
+      <div class="category-nav">
+        <a href="#spin-materials" class="btn btn-default">스핀 응용 전자 소재</a>
+        <a href="#2d-materials" class="btn btn-default">2D 반도체 소재 전자 물성</a>
+        <a href="#plasma-sim" class="btn btn-default">플라즈마 공정 시뮬레이션</a>
+      </div>
+
+      <!-- ==========================================
+           섹션 1: 스핀 응용 전자 소재
+      =========================================== -->
+      <h3 id="spin-materials" class="section-title">📌 스핀 응용 전자 소재 (Spin Application Electronic Materials)</h3>
+      
+      <!-- 스핀 소재 관련 대표 논문/프로젝트 예시 -->
       <div class="row paper-block">
-        <!-- 왼쪽 그림 영역 (PC에서는 3칸, 모바일에서는 12칸 차지) -->
         <div class="col-sm-4 col-md-3 text-center">
-          <!-- 실제 깃허브에 images 폴더를 만들고 그림을 업로드한 뒤 경로를 수정하세요 -->
-          <img src="images/paper1_figure.jpg" alt="Figure for DLC growth" class="paper-img">
+          <img src="images/spin_figure.jpg" alt="QAOA Spin Semiconductor" class="paper-img">
         </div>
-        <!-- 오른쪽 텍스트 영역 (PC에서는 9칸, 모바일에서는 12칸 차지) -->
         <div class="col-sm-8 col-md-9">
-          <h4 class="paper-title"><strong>Atomistic simulations of diamond-like carbon growth</strong></h4>
-          <p class="paper-authors"><strong>M. Joe</strong>, M.-W. Moon, and K.-R. Lee, <em>Thin Solid Films</em> 521, 239 (2012)</p>
+          <h4 class="paper-title"><strong>Discovery of Zero-Moment Spin Semiconductors through QAOA-based Hybrid Screening</strong></h4>
+          <p class="paper-authors"><strong>M. Joe</strong>, et al., <em>(Journal Name / Under Review)</em> (2025)</p>
           
           <div class="paper-summary">
-            <strong>핵심 요약:</strong> 분자동역학(MD) 시뮬레이션을 활용하여 다이아몬드상 탄소(DLC) 박막의 원자 단위 성장 메커니즘을 규명한 연구입니다. 탄소 원자의 입사 에너지가 박막의 밀도와 sp3 결합 비율에 미치는 영향을 정량적으로 분석하였습니다.
+            <strong>핵심 요약:</strong> 양자 근사 최적화 알고리즘(QAOA)을 도입한 하이브리드 스크리닝 기법을 개발하여, 기존 VASP 계산의 병목 현상이었던 스핀 구조 최적화 시간을 획기적으로 단축하고 영모멘트 스핀 반도체 후보군을 새롭게 발굴하였습니다.
           </div>
           
           <div style="margin-top: 15px;">
-            <a href="논문PDF링크나_DOI링크_입력" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
+            <a href="#" target="_blank" class="btn btn-primary btn-sm">상세 보기 (PDF)</a>
           </div>
         </div>
       </div>
-      <!-- [논문 1 끝] -->
 
-      <!-- [논문 2 시작] (기존 코드에서 닫히지 않았던 li 태그 문제도 해결됨) -->
+      <!-- ==========================================
+           섹션 2: 2D 반도체 소재 전자 물성
+      =========================================== -->
+      <h3 id="2d-materials" class="section-title">📌 2D 반도체 소재 전자 물성 (2D Semiconductor Materials)</h3>
+      
+      <!-- 2D 소재 관련 논문 추가 공간 -->
       <div class="row paper-block">
         <div class="col-sm-4 col-md-3 text-center">
-          <img src="images/paper2_figure.jpg" alt="Figure for Carbon" class="paper-img">
+          <img src="images/2d_figure.jpg" alt="2D Material" class="paper-img">
         </div>
         <div class="col-sm-8 col-md-9">
-          <h4 class="paper-title"><strong>Molecular dynamics simulation study on rough amorphous carbon growth by grazing incidence of energetic carbon atoms</strong></h4>
-          <p class="paper-authors"><strong>M. Joe</strong>, M.-W. Moon, J. Oh, K.-H. Lee, and K.-R. Lee, <em>Carbon</em> 50 (2012)</p>
+          <h4 class="paper-title"><strong>[2D 반도체 관련 대표 논문 제목]</strong></h4>
+          <p class="paper-authors"><strong>M. Joe</strong>, et al., <em>Journal Name</em> (Year)</p>
           
           <div class="paper-summary">
-            <strong>핵심 요약:</strong> (교수님께서 읽기 편하시도록 논문의 주요 컨트리뷰션을 2~3줄로 작성해주세요. 어떤 방법론으로 어떤 결과를 얻었는지가 핵심입니다.)
+            <strong>핵심 요약:</strong> 제일원리계산(DFT)을 활용하여 2D 전이금속 칼코겐 화합물의 전자 구조 및 밴드갭 튜닝 메커니즘을 이론적으로 규명하고, 차세대 소자 응용 가능성을 제시하였습니다.
           </div>
           
           <div style="margin-top: 15px;">
@@ -103,19 +130,42 @@
           </div>
         </div>
       </div>
-      <!-- [논문 2 끝] -->
 
-      <!-- [논문 3 시작] -->
+      <!-- ==========================================
+           섹션 3: 플라즈마 공정 시뮬레이션
+      =========================================== -->
+      <h3 id="plasma-sim" class="section-title">📌 플라즈마 공정 시뮬레이션 (Plasma Process Simulation)</h3>
+      
+      <!-- 플라즈마/탄소 시뮬레이션 관련 논문 1 -->
       <div class="row paper-block">
         <div class="col-sm-4 col-md-3 text-center">
-          <img src="images/paper3_figure.jpg" alt="Figure for Nanopatterning" class="paper-img">
+          <img src="images/dlc_figure.jpg" alt="DLC growth" class="paper-img">
+        </div>
+        <div class="col-sm-8 col-md-9">
+          <h4 class="paper-title"><strong>Atomistic simulations of diamond-like carbon growth</strong></h4>
+          <p class="paper-authors"><strong>M. Joe</strong>, M.-W. Moon, and K.-R. Lee, <em>Thin Solid Films</em> 521, 239 (2012)</p>
+          
+          <div class="paper-summary">
+            <strong>핵심 요약:</strong> 분자동역학(MD) 시뮬레이션을 활용하여 다이아몬드상 탄소(DLC) 박막의 원자 단위 성장 메커니즘을 규명하고, 입사 에너지가 박막 물성에 미치는 영향을 분석하였습니다.
+          </div>
+          
+          <div style="margin-top: 15px;">
+            <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 플라즈마/탄소 시뮬레이션 관련 논문 2 -->
+      <div class="row paper-block">
+        <div class="col-sm-4 col-md-3 text-center">
+          <img src="images/nanopattern_figure.jpg" alt="Nanopatterning" class="paper-img">
         </div>
         <div class="col-sm-8 col-md-9">
           <h4 class="paper-title"><strong>Nanopatterning by multiple-ion-beam sputtering</strong></h4>
           <p class="paper-authors"><strong>M. Joe</strong>, J.-H. Kim, B. Kahng, and J.-S. Kim, <em>J. Phys. Condensed Matter</em> 21, 224011 (2009)</p>
           
           <div class="paper-summary">
-            <strong>핵심 요약:</strong> (여기에 요약 내용 작성)
+            <strong>핵심 요약:</strong> 다중 이온빔 스퍼터링 환경에서의 나노 패터닝 형성 원리를 모델링하여 표면 거칠기 및 패턴 제어를 위한 이론적 기반을 마련하였습니다.
           </div>
           
           <div style="margin-top: 15px;">
@@ -123,13 +173,12 @@
           </div>
         </div>
       </div>
-      <!-- [논문 3 끝] -->
       
-      <div class="text-right text-muted" style="margin-top: 20px;">
-        <p><small>Last Updated: 12/Sep/2026</small></p>
+      <div class="text-right text-muted" style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px;">
+        <p><small>Last Updated: September 2026</small></p>
       </div>
 
-    </div> <!-- //container -->
+    </div>
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
