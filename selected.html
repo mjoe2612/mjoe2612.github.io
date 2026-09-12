@@ -17,7 +17,6 @@
         padding-bottom: 40px;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       }
-      /* 상단 네비게이션 버튼 스타일 */
       .category-nav {
         margin-bottom: 40px;
         text-align: center;
@@ -26,7 +25,6 @@
         margin: 5px;
         border-radius: 20px;
       }
-      /* 섹션 제목 스타일 */
       .section-title {
         border-bottom: 2px solid #2c3e50;
         padding-bottom: 10px;
@@ -36,10 +34,10 @@
         font-weight: bold;
       }
       .paper-block {
-        margin-bottom: 40px;
+        margin-bottom: 50px; /* 그림이 커진 만큼 블록 간 간격을 조금 더 넓혔습니다 */
       }
       .paper-title {
-        font-size: 1.15em;
+        font-size: 1.2em; /* 제목 글씨도 약간 키웠습니다 */
         color: #2c3e50;
         margin-top: 0;
       }
@@ -48,15 +46,16 @@
         font-size: 0.95em;
       }
       .paper-summary {
-        margin-top: 10px;
+        margin-top: 15px;
         background-color: #f8f9fa;
         padding: 15px;
         border-left: 4px solid #337ab7;
         font-size: 0.95em;
+        line-height: 1.5;
       }
       .paper-img {
         width: 100%;
-        max-width: 240px;
+        max-width: 400px; /* 기존 240px에서 400px로 대폭 확대 */
         height: auto;
         border: 1px solid #ddd;
         border-radius: 4px;
@@ -67,7 +66,7 @@
   </head>
   <body>
 
-    <div class="container" style="max-width: 900px;">
+    <div class="container" style="max-width: 1000px;"> <!-- 전체 컨테이너 너비도 약간 넓혔습니다 -->
       
       <div class="page-header" style="border-bottom: none; text-align: center;">
         <h1 style="font-weight: bold;">Selected Publications</h1>
@@ -88,12 +87,13 @@
       =========================================== -->
       <h3 id="spin-materials" class="section-title">📌 스핀 응용 전자 소재 (Spin Application Electronic Materials)</h3>
       
-      <!-- 스핀 소재 관련 대표 논문/프로젝트 예시 -->
       <div class="row paper-block">
-        <div class="col-sm-4 col-md-3 text-center">
+        <!-- 그림 영역: col-md-3 -> col-md-5 로 영역 확대 -->
+        <div class="col-sm-5 col-md-5 text-center">
           <img src="images/spin_figure.jpg" alt="QAOA Spin Semiconductor" class="paper-img">
         </div>
-        <div class="col-sm-8 col-md-9">
+        <!-- 텍스트 영역: col-md-9 -> col-md-7 로 영역 조정 -->
+        <div class="col-sm-7 col-md-7">
           <h4 class="paper-title"><strong>Discovery of Zero-Moment Spin Semiconductors through QAOA-based Hybrid Screening</strong></h4>
           <p class="paper-authors"><strong>M. Joe</strong>, et al., <em>(Journal Name / Under Review)</em> (2025)</p>
           
@@ -112,12 +112,11 @@
       =========================================== -->
       <h3 id="2d-materials" class="section-title">📌 2D 반도체 소재 전자 물성 (2D Semiconductor Materials)</h3>
       
-      <!-- 2D 소재 관련 논문 추가 공간 -->
       <div class="row paper-block">
-        <div class="col-sm-4 col-md-3 text-center">
+        <div class="col-sm-5 col-md-5 text-center">
           <img src="images/2d_figure.jpg" alt="2D Material" class="paper-img">
         </div>
-        <div class="col-sm-8 col-md-9">
+        <div class="col-sm-7 col-md-7">
           <h4 class="paper-title"><strong>[2D 반도체 관련 대표 논문 제목]</strong></h4>
           <p class="paper-authors"><strong>M. Joe</strong>, et al., <em>Journal Name</em> (Year)</p>
           
@@ -136,12 +135,11 @@
       =========================================== -->
       <h3 id="plasma-sim" class="section-title">📌 플라즈마 공정 시뮬레이션 (Plasma Process Simulation)</h3>
       
-      <!-- 플라즈마/탄소 시뮬레이션 관련 논문 1 -->
       <div class="row paper-block">
-        <div class="col-sm-4 col-md-3 text-center">
+        <div class="col-sm-5 col-md-5 text-center">
           <img src="images/carbon1.jpg" alt="DLC growth" class="paper-img">
         </div>
-        <div class="col-sm-8 col-md-9">
+        <div class="col-sm-7 col-md-7">
           <h4 class="paper-title"><strong>Atomistic simulations of diamond-like carbon growth</strong></h4>
           <p class="paper-authors"><strong>M. Joe</strong>, M.-W. Moon, and K.-R. Lee, <em>Thin Solid Films</em> 521, 239 (2012)</p>
           
@@ -155,12 +153,11 @@
         </div>
       </div>
 
-      <!-- 플라즈마/탄소 시뮬레이션 관련 논문 2 -->
       <div class="row paper-block">
-        <div class="col-sm-4 col-md-3 text-center">
+        <div class="col-sm-5 col-md-5 text-center">
           <img src="images/nanopattern_figure.jpg" alt="Nanopatterning" class="paper-img">
         </div>
-        <div class="col-sm-8 col-md-9">
+        <div class="col-sm-7 col-md-7">
           <h4 class="paper-title"><strong>Nanopatterning by multiple-ion-beam sputtering</strong></h4>
           <p class="paper-authors"><strong>M. Joe</strong>, J.-H. Kim, B. Kahng, and J.-S. Kim, <em>J. Phys. Condensed Matter</em> 21, 224011 (2009)</p>
           
