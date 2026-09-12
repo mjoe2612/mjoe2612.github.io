@@ -53,7 +53,6 @@
         font-size: 0.95em;
         line-height: 1.5;
       }
-      /* 이미지에 마우스를 올렸을 때 클릭 가능함을 알리는 스타일 추가 */
       .paper-img {
         width: 100%;
         max-width: 400px;
@@ -62,13 +61,12 @@
         border-radius: 4px;
         margin-bottom: 15px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        cursor: zoom-in; /* 돋보기 모양 마우스 커서 */
+        cursor: zoom-in;
         transition: opacity 0.2s;
       }
       .paper-img:hover {
-        opacity: 0.8; /* 마우스 오버 시 살짝 투명해지는 효과 */
+        opacity: 0.8;
       }
-      /* 버튼 간격 조정 */
       .btn-group-custom .btn {
         margin-right: 5px;
         margin-bottom: 5px;
@@ -86,7 +84,6 @@
         </p>
       </div>
 
-      <!-- 상단 카테고리 빠른 이동 버튼 -->
       <div class="category-nav">
         <a href="#spin-materials" class="btn btn-default">스핀 응용 전자 소재</a>
         <a href="#2d-materials" class="btn btn-default">2D 반도체 소재 전자 물성</a>
@@ -100,7 +97,6 @@
       
       <div class="row paper-block">
         <div class="col-sm-5 col-md-5 text-center">
-          <!-- data-toggle="modal" 및 data-target 추가하여 클릭 시 확대 창이 열리도록 설정 -->
           <img src="images/spin_figure.jpg" alt="QAOA Spin Semiconductor" class="paper-img" data-toggle="modal" data-target="#imageModal">
         </div>
         <div class="col-sm-7 col-md-7">
@@ -111,10 +107,10 @@
             <strong>핵심 요약:</strong> 양자 근사 최적화 알고리즘(QAOA)을 도입한 하이브리드 스크리닝 기법을 개발하여, 기존 VASP 계산의 병목 현상이었던 스핀 구조 최적화 시간을 획기적으로 단축하고 영모멘트 스핀 반도체 후보군을 새롭게 발굴하였습니다.
           </div>
           
-          <!-- 버튼 영역: 원문 보기와 관련 링크 병기 -->
           <div class="btn-group-custom" style="margin-top: 15px;">
             <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-            <a href="#" target="_blank" class="btn btn-default btn-sm">저널 논문 링크 (DOI)</a>
+            <!-- 논문 소개 기사나 관련 웹페이지로 연결하는 버튼 -->
+            <a href="#" target="_blank" class="btn btn-default btn-sm">관련 링크 (Related Link)</a>
           </div>
         </div>
       </div>
@@ -138,7 +134,8 @@
           
           <div class="btn-group-custom" style="margin-top: 15px;">
             <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-            <a href="#" target="_blank" class="btn btn-default btn-sm">저널 논문 링크 (DOI)</a>
+            <!-- 만약 관련 링크가 없는 논문이라면 아래 한 줄만 지워주시면 됩니다 -->
+            <a href="#" target="_blank" class="btn btn-default btn-sm">관련 링크 (Related Link)</a>
           </div>
         </div>
       </div>
@@ -150,7 +147,7 @@
       
       <div class="row paper-block">
         <div class="col-sm-5 col-md-5 text-center">
-          <img src="images/carbon1.jpg" alt="DLC growth" class="paper-img" data-toggle="modal" data-target="#imageModal">
+          <img src="images/dlc_figure.jpg" alt="DLC growth" class="paper-img" data-toggle="modal" data-target="#imageModal">
         </div>
         <div class="col-sm-7 col-md-7">
           <h4 class="paper-title"><strong>Atomistic simulations of diamond-like carbon growth</strong></h4>
@@ -162,7 +159,7 @@
           
           <div class="btn-group-custom" style="margin-top: 15px;">
             <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-            <a href="#" target="_blank" class="btn btn-default btn-sm">저널 논문 링크 (DOI)</a>
+            <a href="#" target="_blank" class="btn btn-default btn-sm">관련 링크 (Related Link)</a>
           </div>
         </div>
       </div>
@@ -181,7 +178,6 @@
           
           <div class="btn-group-custom" style="margin-top: 15px;">
             <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-            <a href="#" target="_blank" class="btn btn-default btn-sm">저널 논문 링크 (DOI)</a>
           </div>
         </div>
       </div>
@@ -192,7 +188,7 @@
 
     </div>
 
-    <!-- 이미지 확대용 모달 (Modal) -->
+    <!-- 이미지 확대용 모달 -->
     <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -201,7 +197,6 @@
             <h4 class="modal-title" id="imageModalLabel">Figure</h4>
           </div>
           <div class="modal-body text-center">
-            <!-- 자바스크립트를 통해 클릭한 이미지의 주소가 이곳으로 들어옵니다 -->
             <img src="" id="modalImage" style="max-width: 100%; height: auto;">
           </div>
         </div>
@@ -212,12 +207,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     
-    <!-- 이미지 클릭 시 모달창에 해당 이미지를 띄워주는 자바스크립트 -->
     <script>
       $(document).ready(function(){
         $('.paper-img').on('click', function(){
-          var src = $(this).attr('src'); // 클릭한 그림의 경로를 가져옴
-          $('#modalImage').attr('src', src); // 모달창 안의 이미지 태그에 경로를 덮어씌움
+          var src = $(this).attr('src');
+          $('#modalImage').attr('src', src);
         });
       });
     </script>
