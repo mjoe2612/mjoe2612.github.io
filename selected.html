@@ -40,10 +40,19 @@
         font-size: 1.2em;
         color: #2c3e50;
         margin-top: 0;
+        line-height: 1.4;
+      }
+      /* 저자 역할 뱃지 스타일 */
+      .author-badge {
+        font-size: 0.65em;
+        vertical-align: text-bottom;
+        margin-left: 8px;
+        font-weight: normal;
       }
       .paper-authors {
         color: #555;
         font-size: 0.95em;
+        margin-top: 5px;
       }
       .paper-summary {
         margin-top: 15px;
@@ -51,7 +60,7 @@
         padding: 15px;
         border-left: 4px solid #337ab7;
         font-size: 0.95em;
-        line-height: 1.5;
+        line-height: 1.6;
       }
       .paper-img {
         width: 100%;
@@ -91,7 +100,7 @@
       </div>
 
       <!-- ==========================================
-           섹션 1: 스핀 응용 전자 소재
+           섹션 1: 스핀 응용 전자 소재 (제1저자 예시)
       =========================================== -->
       <h3 id="spin-materials" class="section-title">📌 스핀 응용 전자 소재 (Spin Application Electronic Materials)</h3>
       
@@ -100,7 +109,11 @@
           <img src="images/spin_figure.jpg" alt="QAOA Spin Semiconductor" class="paper-img" data-toggle="modal" data-target="#imageModal">
         </div>
         <div class="col-sm-7 col-md-7">
-          <h4 class="paper-title"><strong>Discovery of Zero-Moment Spin Semiconductors through QAOA-based Hybrid Screening</strong></h4>
+          <h4 class="paper-title">
+            <strong>Discovery of Zero-Moment Spin Semiconductors through QAOA-based Hybrid Screening</strong>
+            <!-- 제1저자 뱃지 (파란색) -->
+            <span class="label label-primary author-badge">First Author</span>
+          </h4>
           <p class="paper-authors"><strong>M. Joe</strong>, et al., <em>(Journal Name / Under Review)</em> (2025)</p>
           
           <div class="paper-summary">
@@ -109,14 +122,13 @@
           
           <div class="btn-group-custom" style="margin-top: 15px;">
             <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-            <!-- 논문 소개 기사나 관련 웹페이지로 연결하는 버튼 -->
             <a href="#" target="_blank" class="btn btn-default btn-sm">관련 링크 (Related Link)</a>
           </div>
         </div>
       </div>
 
       <!-- ==========================================
-           섹션 2: 2D 반도체 소재 전자 물성
+           섹션 2: 2D 반도체 소재 전자 물성 (공동저자 예시)
       =========================================== -->
       <h3 id="2d-materials" class="section-title">📌 2D 반도체 소재 전자 물성 (2D Semiconductor Materials)</h3>
       
@@ -125,17 +137,22 @@
           <img src="images/2d_figure.jpg" alt="2D Material" class="paper-img" data-toggle="modal" data-target="#imageModal">
         </div>
         <div class="col-sm-7 col-md-7">
-          <h4 class="paper-title"><strong>[2D 반도체 관련 대표 논문 제목]</strong></h4>
-          <p class="paper-authors"><strong>M. Joe</strong>, et al., <em>Journal Name</em> (Year)</p>
+          <h4 class="paper-title">
+            <strong>[2D 반도체 관련 훌륭한 공동연구 논문 제목]</strong>
+            <!-- 공동저자 뱃지 (회색) -->
+            <span class="label label-default author-badge">Co-Author</span>
+          </h4>
+          <p class="paper-authors">A. Colleague, <strong>M. Joe</strong>, et al., <em>Journal Name</em> (Year)</p>
           
           <div class="paper-summary">
-            <strong>핵심 요약:</strong> 제일원리계산(DFT)을 활용하여 2D 전이금속 칼코겐 화합물의 전자 구조 및 밴드갭 튜닝 메커니즘을 이론적으로 규명하고, 차세대 소자 응용 가능성을 제시하였습니다.
+            <strong>전체 요약:</strong> 2D 전이금속 칼코겐 화합물의 구조적 결함이 전자 물성에 미치는 영향을 분석하여, 차세대 소자의 효율을 높일 수 있는 새로운 방법론을 제시한 연구입니다.<br><br>
+            <!-- 공동저자로서의 구체적인 기여도 명시 -->
+            <strong style="color: #337ab7;">✔ 나의 기여도 (My Contribution):</strong> 
+            제일원리계산(DFT) 및 VASP를 활용한 소재의 밴드갭 시뮬레이션을 전담하였으며, 실험 그룹에서 도출된 광학적 특성 데이터와 이론적 모델의 정합성을 검증하는 핵심 역할을 수행했습니다.
           </div>
           
           <div class="btn-group-custom" style="margin-top: 15px;">
             <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-            <!-- 만약 관련 링크가 없는 논문이라면 아래 한 줄만 지워주시면 됩니다 -->
-            <a href="#" target="_blank" class="btn btn-default btn-sm">관련 링크 (Related Link)</a>
           </div>
         </div>
       </div>
@@ -147,10 +164,13 @@
       
       <div class="row paper-block">
         <div class="col-sm-5 col-md-5 text-center">
-          <img src="images/carbon1.jpg" alt="DLC growth" class="paper-img" data-toggle="modal" data-target="#imageModal">
+          <img src="images/dlc_figure.jpg" alt="DLC growth" class="paper-img" data-toggle="modal" data-target="#imageModal">
         </div>
         <div class="col-sm-7 col-md-7">
-          <h4 class="paper-title"><strong>Atomistic simulations of diamond-like carbon growth</strong></h4>
+          <h4 class="paper-title">
+            <strong>Atomistic simulations of diamond-like carbon growth</strong>
+            <span class="label label-primary author-badge">First Author</span>
+          </h4>
           <p class="paper-authors"><strong>M. Joe</strong>, M.-W. Moon, and K.-R. Lee, <em>Thin Solid Films</em> 521, 239 (2012)</p>
           
           <div class="paper-summary">
@@ -159,29 +179,11 @@
           
           <div class="btn-group-custom" style="margin-top: 15px;">
             <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-            <a href="https://www.lammps.org/gallery/filmgrowth/" target="_blank" class="btn btn-default btn-sm">관련 링크 (Related Link)</a>
+            <a href="#" target="_blank" class="btn btn-default btn-sm">관련 링크 (Related Link)</a>
           </div>
         </div>
       </div>
 
-      <div class="row paper-block">
-        <div class="col-sm-5 col-md-5 text-center">
-          <img src="images/nanopattern_figure.jpg" alt="Nanopatterning" class="paper-img" data-toggle="modal" data-target="#imageModal">
-        </div>
-        <div class="col-sm-7 col-md-7">
-          <h4 class="paper-title"><strong>Nanopatterning by multiple-ion-beam sputtering</strong></h4>
-          <p class="paper-authors"><strong>M. Joe</strong>, J.-H. Kim, B. Kahng, and J.-S. Kim, <em>J. Phys. Condensed Matter</em> 21, 224011 (2009)</p>
-          
-          <div class="paper-summary">
-            <strong>핵심 요약:</strong> 다중 이온빔 스퍼터링 환경에서의 나노 패터닝 형성 원리를 모델링하여 표면 거칠기 및 패턴 제어를 위한 이론적 기반을 마련하였습니다.
-          </div>
-          
-          <div class="btn-group-custom" style="margin-top: 15px;">
-            <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-          </div>
-        </div>
-      </div>
-      
       <div class="text-right text-muted" style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px;">
         <p><small>Last Updated: September 2026</small></p>
       </div>
