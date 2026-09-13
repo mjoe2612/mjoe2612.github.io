@@ -42,7 +42,6 @@
         margin-top: 0;
         line-height: 1.4;
       }
-      /* 저자 역할 뱃지 스타일 */
       .author-badge {
         font-size: 0.65em;
         vertical-align: text-bottom;
@@ -95,12 +94,11 @@
 
       <div class="category-nav">
         <a href="#spin-materials" class="btn btn-default">스핀 응용 전자 소재</a>
-        <a href="#2d-materials" class="btn btn-default">2D 반도체 소재 전자 물성</a>
         <a href="#plasma-sim" class="btn btn-default">플라즈마 공정 시뮬레이션</a>
       </div>
 
       <!-- ==========================================
-           섹션 1: 스핀 응용 전자 소재 (제1저자 예시)
+           섹션 1: 스핀 응용 전자 소재 
       =========================================== -->
       <h3 id="spin-materials" class="section-title">📌 스핀 응용 전자 소재 (Spin Application Electronic Materials)</h3>
       
@@ -111,7 +109,6 @@
         <div class="col-sm-7 col-md-7">
           <h4 class="paper-title">
             <strong>Discovery of Zero-Moment Spin Semiconductors through QAOA-based Hybrid Screening</strong>
-            <!-- 제1저자 뱃지 (파란색) -->
             <span class="label label-primary author-badge">First Author</span>
           </h4>
           <p class="paper-authors"><strong>M. Joe</strong>, et al., <em>(Journal Name / Under Review)</em> (2025)</p>
@@ -121,71 +118,67 @@
           </div>
           
           <div class="btn-group-custom" style="margin-top: 15px;">
-            <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-            <a href="#" target="_blank" class="btn btn-default btn-sm">관련 링크 (Related Link)</a>
+            <!-- pdf 폴더 내의 파일로 연결되도록 수정 (파일명은 실제 업로드할 파일명으로 변경 필요) -->
+            <a href="pdf/spin_semiconductor_2025.pdf" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
           </div>
         </div>
       </div>
 
       <!-- ==========================================
-           섹션 2: 2D 반도체 소재 전자 물성 (공동저자 예시)
-      =========================================== -->
-      <h3 id="2d-materials" class="section-title">📌 2D 반도체 소재 전자 물성 (2D Semiconductor Materials)</h3>
-      
-      <div class="row paper-block">
-        <div class="col-sm-5 col-md-5 text-center">
-          <img src="images/2d_figure.jpg" alt="2D Material" class="paper-img" data-toggle="modal" data-target="#imageModal">
-        </div>
-        <div class="col-sm-7 col-md-7">
-          <h4 class="paper-title">
-            <strong>[2D 반도체 관련 훌륭한 공동연구 논문 제목]</strong>
-            <!-- 공동저자 뱃지 (회색) -->
-            <span class="label label-default author-badge">Co-Author</span>
-          </h4>
-          <p class="paper-authors">A. Colleague, <strong>M. Joe</strong>, et al., <em>Journal Name</em> (Year)</p>
-          
-          <div class="paper-summary">
-            <strong>전체 요약:</strong> 2D 전이금속 칼코겐 화합물의 구조적 결함이 전자 물성에 미치는 영향을 분석하여, 차세대 소자의 효율을 높일 수 있는 새로운 방법론을 제시한 연구입니다.<br><br>
-            <!-- 공동저자로서의 구체적인 기여도 명시 -->
-            <strong style="color: #337ab7;">✔ 나의 기여도 (My Contribution):</strong> 
-            제일원리계산(DFT) 및 VASP를 활용한 소재의 밴드갭 시뮬레이션을 전담하였으며, 실험 그룹에서 도출된 광학적 특성 데이터와 이론적 모델의 정합성을 검증하는 핵심 역할을 수행했습니다.
-          </div>
-          
-          <div class="btn-group-custom" style="margin-top: 15px;">
-            <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- ==========================================
-           섹션 3: 플라즈마 공정 시뮬레이션
+           섹션 2: 플라즈마 공정 시뮬레이션
       =========================================== -->
       <h3 id="plasma-sim" class="section-title">📌 플라즈마 공정 시뮬레이션 (Plasma Process Simulation)</h3>
       
+      <!-- 플라즈마 시뮬레이션 논문 1 -->
       <div class="row paper-block">
         <div class="col-sm-5 col-md-5 text-center">
           <img src="images/dlc_figure.jpg" alt="DLC growth" class="paper-img" data-toggle="modal" data-target="#imageModal">
         </div>
         <div class="col-sm-7 col-md-7">
           <h4 class="paper-title">
-            <strong>Molecular dynamics simulation study on rough amorphous carbon growth by grazing incidence of energetic carbon atoms</strong>
+            <strong>Atomistic simulations of diamond-like carbon growth</strong>
             <span class="label label-primary author-badge">First Author</span>
           </h4>
-          <p class="paper-authors"><strong>M. Joe</strong>, M.-W. Moon, and K.-R. Lee, <em>Carbon</em> 50, 404 (2012)</p>
+          <p class="paper-authors"><strong>M. Joe</strong>, M.-W. Moon, and K.-R. Lee, <em>Thin Solid Films</em> 521, 239 (2012)</p>
           
           <div class="paper-summary">
             <strong>핵심 요약:</strong> 분자동역학(MD) 시뮬레이션을 활용하여 다이아몬드상 탄소(DLC) 박막의 원자 단위 성장 메커니즘을 규명하고, 입사 에너지가 박막 물성에 미치는 영향을 분석하였습니다.
           </div>
           
           <div class="btn-group-custom" style="margin-top: 15px;">
-            <a href="#" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-            <a href="#" target="_blank" class="btn btn-default btn-sm">관련 링크 (Related Link)</a>
+            <!-- pdf 폴더 내의 파일로 연결되도록 수정 -->
+            <a href="pdf/atomistic_simulations_dlc_2012.pdf" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
+            <!-- 요청하신 LAMMPS 갤러리 링크 적용 -->
+            <a href="https://www.lammps.org/gallery/filmgrowth/" target="_blank" class="btn btn-default btn-sm">관련 링크 (LAMMPS Gallery)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 플라즈마 시뮬레이션 논문 2 -->
+      <div class="row paper-block">
+        <div class="col-sm-5 col-md-5 text-center">
+          <img src="images/carbon_growth_figure.jpg" alt="Amorphous carbon growth" class="paper-img" data-toggle="modal" data-target="#imageModal">
+        </div>
+        <div class="col-sm-7 col-md-7">
+          <h4 class="paper-title">
+            <strong>Molecular dynamics simulation study on rough amorphous carbon growth by grazing incidence of energetic carbon atoms</strong>
+            <span class="label label-primary author-badge">First Author</span>
+          </h4>
+          <p class="paper-authors"><strong>M. Joe</strong>, M.-W. Moon, J. Oh, K.-H. Lee, and K.-R. Lee, <em>Carbon</em> 50 (2012)</p>
+          
+          <div class="paper-summary">
+            <strong>핵심 요약:</strong> 고에너지 탄소 원자의 경사 입사(Grazing incidence) 조건에서 비정질 탄소 박막이 성장하는 과정을 분자동역학으로 시뮬레이션하여, 표면 거칠기 변화 메커니즘을 밝혀냈습니다.
+          </div>
+          
+          <div class="btn-group-custom" style="margin-top: 15px;">
+             <!-- pdf 폴더 내의 파일로 연결되도록 수정 -->
+            <a href="pdf/carbon_growth_2012.pdf" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
           </div>
         </div>
       </div>
 
       <div class="text-right text-muted" style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px;">
-        <p><small>Last Updated: September 2026</small></p>
+        <p><small>Last Updated: September 13, 2026</small></p>
       </div>
 
     </div>
