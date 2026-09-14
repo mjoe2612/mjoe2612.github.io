@@ -18,17 +18,25 @@
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       }
       .category-nav {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         text-align: center;
       }
       .category-nav a {
         margin: 5px;
         border-radius: 20px;
       }
+      /* Executive Summary 박스 스타일 */
+      .executive-summary {
+        background-color: #f4f8fb;
+        padding: 25px;
+        border-radius: 8px;
+        margin-bottom: 50px;
+        border-left: 5px solid #2980b9;
+      }
       .section-title {
         border-bottom: 2px solid #2c3e50;
         padding-bottom: 10px;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 30px;
         color: #2c3e50;
         font-weight: bold;
@@ -85,15 +93,31 @@
 
     <div class="container" style="max-width: 1000px;">
       
-      <div class="page-header" style="border-bottom: none; text-align: center;">
+      <div class="page-header" style="border-bottom: none; text-align: center; margin-bottom: 20px;">
         <h1 style="font-weight: bold;">Selected Publications</h1>
-        <p class="lead" style="margin-top: 15px; color: #666;">
+        <p class="lead" style="margin-top: 10px; color: #666;">
           Minwoong Joe, Ph.D.
         </p>
       </div>
 
+      <!-- ==========================================
+           최상단 연구 요약 (Executive Summary)
+      =========================================== -->
+      <div class="executive-summary">
+        <h4 style="margin-top: 0; color: #2980b9; font-weight: bold;">Executive Summary</h4>
+        <p style="font-size: 1.05em; color: #333; line-height: 1.6;">
+          <strong>계산재료과학 및 양자 컴퓨팅(QAOA) 기반 차세대 전자 소재 설계</strong><br>
+          제일원리계산(DFT, VASP)과 최신 양자 알고리즘을 결합한 하이브리드 스크리닝 기법을 통해, 영모멘트 스핀 반도체 및 2D 소재의 전자 물성을 연구합니다. 플라즈마 공정 시뮬레이션부터 차세대 양자 소재 발굴까지, 전자 소자 구현을 위한 융합적·이론적 솔루션을 제시합니다.
+        </p>
+        <p style="margin-bottom: 0; color: #666; font-size: 0.95em; line-height: 1.5;">
+          <em>Computational materials scientist specializing in first-principles calculations (VASP) and quantum algorithms (QAOA, Qiskit). Dedicated to discovering next-generation spin semiconductors and analyzing atomic-level plasma processes through multi-scale modeling.</em>
+        </p>
+      </div>
+
+      <!-- 상단 카테고리 빠른 이동 버튼 -->
       <div class="category-nav">
         <a href="#spin-materials" class="btn btn-default">스핀 응용 전자 소재</a>
+        <a href="#2d-materials" class="btn btn-default">2D 반도체 소재 전자 물성</a>
         <a href="#plasma-sim" class="btn btn-default">플라즈마 공정 시뮬레이션</a>
       </div>
 
@@ -118,18 +142,43 @@
           </div>
           
           <div class="btn-group-custom" style="margin-top: 15px;">
-            <!-- pdf 폴더 내의 파일로 연결되도록 수정 (파일명은 실제 업로드할 파일명으로 변경 필요) -->
             <a href="pdf/spin_semiconductor_2025.pdf" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
           </div>
         </div>
       </div>
 
       <!-- ==========================================
-           섹션 2: 플라즈마 공정 시뮬레이션
+           섹션 2: 2D 반도체 소재 전자 물성
+      =========================================== -->
+      <h3 id="2d-materials" class="section-title">📌 2D 반도체 소재 전자 물성 (2D Semiconductor Materials)</h3>
+      
+      <div class="row paper-block">
+        <div class="col-sm-5 col-md-5 text-center">
+          <!-- 교체할 이미지 경로 -->
+          <img src="images/2d_figure_placeholder.jpg" alt="2D Materials" class="paper-img" data-toggle="modal" data-target="#imageModal">
+        </div>
+        <div class="col-sm-7 col-md-7">
+          <h4 class="paper-title">
+            <strong>[2D 반도체 관련 대표 논문 제목 입력]</strong>
+            <span class="label label-default author-badge">Co-Author</span>
+          </h4>
+          <p class="paper-authors">A. Colleague, <strong>M. Joe</strong>, et al., <em>Journal Name</em> (Year)</p>
+          
+          <div class="paper-summary">
+            <strong>핵심 요약:</strong> 제일원리계산(DFT)을 활용하여 2D 전이금속 화합물의 전자 구조 및 밴드갭 튜닝 메커니즘을 규명하고, 차세대 소자 응용 가능성을 제시하였습니다.
+          </div>
+          
+          <div class="btn-group-custom" style="margin-top: 15px;">
+            <a href="pdf/2d_material_paper.pdf" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           섹션 3: 플라즈마 공정 시뮬레이션
       =========================================== -->
       <h3 id="plasma-sim" class="section-title">📌 플라즈마 공정 시뮬레이션 (Plasma Process Simulation)</h3>
       
-      <!-- 플라즈마 시뮬레이션 논문 1 -->
       <div class="row paper-block">
         <div class="col-sm-5 col-md-5 text-center">
           <img src="images/dlc_figure.jpg" alt="DLC growth" class="paper-img" data-toggle="modal" data-target="#imageModal">
@@ -146,39 +195,14 @@
           </div>
           
           <div class="btn-group-custom" style="margin-top: 15px;">
-            <!-- pdf 폴더 내의 파일로 연결되도록 수정 -->
             <a href="pdf/atomistic_simulations_dlc_2012.pdf" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-            <!-- 요청하신 LAMMPS 갤러리 링크 적용 -->
             <a href="https://www.lammps.org/gallery/filmgrowth/" target="_blank" class="btn btn-default btn-sm">관련 링크 (LAMMPS Gallery)</a>
           </div>
         </div>
       </div>
 
-      <!-- 플라즈마 시뮬레이션 논문 2 -->
-      <div class="row paper-block">
-        <div class="col-sm-5 col-md-5 text-center">
-          <img src="images/carbon_growth_figure.jpg" alt="Amorphous carbon growth" class="paper-img" data-toggle="modal" data-target="#imageModal">
-        </div>
-        <div class="col-sm-7 col-md-7">
-          <h4 class="paper-title">
-            <strong>Molecular dynamics simulation study on rough amorphous carbon growth by grazing incidence of energetic carbon atoms</strong>
-            <span class="label label-primary author-badge">First Author</span>
-          </h4>
-          <p class="paper-authors"><strong>M. Joe</strong>, M.-W. Moon, J. Oh, K.-H. Lee, and K.-R. Lee, <em>Carbon</em> 50 (2012)</p>
-          
-          <div class="paper-summary">
-            <strong>핵심 요약:</strong> 고에너지 탄소 원자의 경사 입사(Grazing incidence) 조건에서 비정질 탄소 박막이 성장하는 과정을 분자동역학으로 시뮬레이션하여, 표면 거칠기 변화 메커니즘을 밝혀냈습니다.
-          </div>
-          
-          <div class="btn-group-custom" style="margin-top: 15px;">
-             <!-- pdf 폴더 내의 파일로 연결되도록 수정 -->
-            <a href="pdf/2012-Joe-Carbon.pdf" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
-          </div>
-        </div>
-      </div>
-
       <div class="text-right text-muted" style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px;">
-        <p><small>Last Updated: September 13, 2026</small></p>
+        <p><small>Last Updated: September 14, 2026</small></p>
       </div>
 
     </div>
