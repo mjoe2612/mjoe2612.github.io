@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>Selected Publications - Minwoong Joe</title>
+    <title>Selected Publications & Projects - Minwoong Joe</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Minwoong Joe's Selected Publications">
+    <meta name="description" content="Minwoong Joe's Selected Publications and Ongoing Projects">
     <meta name="theme-color" content="#000000">
 
     <!-- Bootstrap 3.4.0 -->
@@ -68,6 +68,15 @@
         font-size: 0.95em;
         line-height: 1.6;
       }
+      /* 프로젝트(과제)용 특화 요약 박스 */
+      .project-summary {
+        margin-top: 15px;
+        background-color: #fdfaf3; /* 약간 다른 톤으로 차별화 */
+        padding: 15px;
+        border-left: 4px solid #f39c12; /* 오렌지색 계열로 포인트 */
+        font-size: 0.95em;
+        line-height: 1.6;
+      }
       .paper-img {
         width: 100%;
         max-width: 400px;
@@ -93,7 +102,7 @@
     <div class="container" style="max-width: 1000px;">
       
       <div class="page-header" style="border-bottom: none; text-align: center; margin-bottom: 20px;">
-        <h1 style="font-weight: bold;">Selected Publications</h1>
+        <h1 style="font-weight: bold;">Selected Publications & Projects</h1>
         <p class="lead" style="margin-top: 10px; color: #666;">
           Minwoong Joe, Ph.D.
         </p>
@@ -117,6 +126,7 @@
         <a href="#spin-materials" class="btn btn-default">스핀 응용 전자 소재</a>
         <a href="#2d-materials" class="btn btn-default">2D 반도체 소재 전자 물성</a>
         <a href="#plasma-sim" class="btn btn-default">플라즈마 공정 시뮬레이션</a>
+        <a href="#quantum-project" class="btn btn-warning">양자 융합 연구 (Ongoing Project)</a>
       </div>
 
       <!-- ==========================================
@@ -131,7 +141,6 @@
         <div class="col-sm-7 col-md-7">
           <h4 class="paper-title">
             <strong>Cr<sub>2</sub>S<sub>3</sub> a bipolar semiconducting fully compensated ferrimagnet</strong>
-            <!-- 공동 제1저자 및 교신저자 배지 추가 -->
             <span class="label label-primary author-badge">Co-First Author</span>
             <span class="label label-success author-badge">Corresponding Author</span>
           </h4>
@@ -199,6 +208,35 @@
           <div class="btn-group-custom" style="margin-top: 15px;">
             <a href="pdf/2012-Joe-Carbon.pdf" target="_blank" class="btn btn-primary btn-sm">원문 보기 (PDF)</a>
             <a href="https://www.lammps.org/gallery/filmgrowth/" target="_blank" class="btn btn-default btn-sm">관련 링크 (LAMMPS Gallery)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           섹션 4: 양자 컴퓨팅 융합 (Ongoing Project)
+      =========================================== -->
+      <h3 id="quantum-project" class="section-title">🚀 양자 융합 연구 (Quantum Computing & Future Vision)</h3>
+      
+      <div class="row paper-block">
+        <div class="col-sm-5 col-md-5 text-center">
+          <!-- 과제 요약도나 QAOA 관련 개념도 이미지를 활용하시면 좋습니다 -->
+          <img src="images/qaoa_project_figure.jpg" alt="QAOA Hybrid Screening Project" class="paper-img" data-toggle="modal" data-target="#imageModal">
+        </div>
+        <div class="col-sm-7 col-md-7">
+          <h4 class="paper-title">
+            <strong>QAOA 기반 하이브리드 스크리닝을 통한 제로 모멘트 스핀 반도체 발굴</strong>
+            <span class="label label-warning author-badge">Principal Investigator (연구책임자)</span>
+          </h4>
+          <p class="paper-authors"><strong>주관기관:</strong> 과학기술정보통신부 (Ministry of Science and ICT) | <strong>연구기간:</strong> 2026 ~ 2028 (3년)</p>
+          
+          <div class="project-summary">
+            <strong>과제 개요:</strong> 현재 학계의 난제 중 하나인 복잡한 스핀 구조 최적화 문제를 해결하기 위해, 고전적 슈퍼컴퓨팅 리소스와 양자 근사 최적화 알고리즘(Quantum Approximate Optimization Algorithm, QAOA)을 결합한 하이브리드 스크리닝 원천 기술을 개발하는 3년 중장기 국가 연구 과제입니다.<br><br>
+            <strong>미래 비전 (Future Vision):</strong> 기존 제일원리계산(DFT)이 가지는 계산 비용적 한계를 양자 알고리즘으로 극복함으로써 신소재 탐색 공간을 기하급수적으로 확장하고, 향후 제가 이끌어갈 독립적인 연구실(Lab)의 <strong>핵심 융합 연구 플랫폼</strong>으로 발전시킬 계획입니다.
+          </div>
+          
+          <div class="btn-group-custom" style="margin-top: 15px;">
+            <!-- 과제 소개 자료나 관련 기사가 있다면 연결하고, 없다면 버튼은 삭제하셔도 됩니다 -->
+            <a href="#" target="_blank" class="btn btn-default btn-sm">과제 요약서 보기 (PDF)</a>
           </div>
         </div>
       </div>
