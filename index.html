@@ -23,23 +23,45 @@
         display: flex;
         align-items: center;
       }
+      /* 큐레이션 페이지 이동 버튼용 스타일 */
+      .highlight-btn {
+        margin-top: 15px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
+      
+      <!-- 상단 프로필 영역 -->
+      <div class="jumbotron" style="padding-top: 30px; padding-bottom: 30px; margin-top: 30px;">
         <div class="row vertical-center">
-          <div class="col-sm-6">
-            <img src="201910021_MJ_Photo.jpg" class="img-responsive img-rounded" alt="Profile image" style="width: 15em; margin: auto; display: block" />
+          <div class="col-sm-4 text-center">
+            <img src="201910021_MJ_Photo.jpg" class="img-responsive img-rounded" alt="Profile image" style="width: 14em; margin: auto; display: block; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
           </div>
-          <div class="col-sm-6">
-            <p><strong>Minwoong Joe Ph.D</strong></p>
-            <p>School of Mechanical Engineering<br />Sungkyunkwan University<br />Suwon, 16419 Korea</p>
-            <p>Phone: +82-031-290-7921<br />Email: <a href="mailto:mjoe122@skku.edu">mjoe122@skku.edu</a></p>
+          <div class="col-sm-8">
+            <h2 style="margin-top: 0;"><strong>Minwoong Joe, Ph.D.</strong></h2>
+            <p style="font-size: 1.1em; color: #555;">
+              School of Mechanical Engineering<br />
+              Sungkyunkwan University<br />
+              Suwon, 16419 Korea
+            </p>
+            <p style="font-size: 1em;">
+              <strong>Phone:</strong> +82-031-290-7921<br />
+              <strong>Email:</strong> <a href="mailto:mjoe122@skku.edu">mjoe122@skku.edu</a>
+            </p>
+            
+            <!-- 큐레이션 페이지로 이동하는 하이라이트 버튼 추가 -->
+            <div class="highlight-btn">
+              <a href="selected.html" class="btn btn-primary btn-lg">
+                <span class="glyphicon glyphicon-star" aria-hidden="true" style="margin-right: 5px;"></span> View Selected Publications & Projects
+              </a>
+            </div>
+            
           </div>
         </div>
       </div>
 
+      <!-- Education -->
       <div>
         <div class="page-header">
           <h1>Education</h1>
@@ -48,7 +70,12 @@
           <p><b>Ph.D.</b> in physics, 2009. Seoul National University, Seoul, Korea (with <i>honor</i>)</p>
           <div style="font-style: italic; margin-left: 3em">
             <p>
-              Thesis Title: Patterning by ion-beam sputtering<br />
+              <!-- 박사학위 논문 제목에 pdf 링크 연결 -->
+              Thesis Title: 
+              <a href="pdf/PhD_Thesis_MinwoongJoe.pdf" target="_blank" style="color: #2980b9; text-decoration: underline; font-weight: bold;">
+                Patterning by ion-beam sputtering
+              </a><br />
+              <span style="font-size: 0.9em; color: #777;">(Includes approval page signed by former IBS President and acknowledgements)</span>
             </p>
           </div>
           <p><b>M.S.</b> in physics, 2003. Seoul National University, Seoul, Korea</p>
@@ -56,6 +83,7 @@
         </div>
       </div>
       
+      <!-- Work Experience -->
       <div>
         <div class="page-header">
           <h1>Work Experience</h1>
@@ -69,12 +97,13 @@
         </div>
       </div>
 
+      <!-- Principal Investigator -->
       <div>
         <div class="page-header">
           <h1>Principal Investigator</h1>
         </div>
         <div>
-          <p><b>The National Research Foundation of Korea (NRF) grant funded by the Ministry of Education (MOE)</b></p>
+          <p><b>The National Research Foundation of Korea (NRF) grant funded by the Ministry of Education (MOE) / Ministry of Science and ICT</b></p>
           <ul>
             <li><b>Nov 2016 – Oct 2019:</b> "Development of stacking-controlled 2D materials using their shear mechanical properties" (NRF-2016R1A6A3A11934734)</li>
             <li><b>Jun 2019 – May 2022:</b> "Computational study of novel materials properties of van der Waals heterostructure by varying the twist angles between layers" (NRF-2019R1I1A1A01061466)</li>
@@ -88,6 +117,7 @@
         </div>
       </div>
 
+      <!-- Current Research -->
       <div>
         <div class="page-header">
           <h1>Current Research</h1>
@@ -97,9 +127,10 @@
         </div>
       </div>
       
+      <!-- Publications -->
       <div>
         <div class="page-header">
-          <h1><a href="Publication.html" target="_blank"> Publications </a></h1>
+          <h1><a href="Publication.html" target="_blank" style="text-decoration: none; color: inherit;">Publications (Full List)</a></h1>
         </div>
         <div>
           <ol>
@@ -140,6 +171,7 @@
         </div>
       </div>
 
+      <!-- Gallery -->
       <div>
         <div class="page-header">
           <h1>Gallery</h1>
@@ -153,6 +185,7 @@
         </div>
       </div>
       
+      <!-- Major Conferences -->
       <div>
         <div class="page-header">
           <h1>Major Conferences Contributed</h1>
@@ -173,6 +206,7 @@
         </div>
       </div>
 
+      <!-- Awards -->
       <div>
         <div class="page-header">
           <h1>Awards</h1>
@@ -188,6 +222,7 @@
         </div>
       </div>
 
+      <!-- Books -->
       <div>
         <div class="page-header">
           <h1>Books</h1>
@@ -200,6 +235,7 @@
         </div>
       </div>
 
+      <!-- Teaching Experience -->
       <div>
         <div class="page-header">
           <h1>Teaching Experience</h1>
@@ -217,6 +253,7 @@
         </div>
       </div>
 
+      <!-- Personal -->
       <div>
         <div class="page-header">
           <h1>Personal</h1>
@@ -244,7 +281,7 @@
       <hr />
 
       <div>
-        <p>Updated: 15/Sep/2026</p>
+        <p>Updated: 17/Sep/2026</p>
       </div>
     </div>
 
